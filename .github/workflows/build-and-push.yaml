@@ -47,7 +47,7 @@ jobs:
       - name: Build and push image
         uses: docker/build-push-action@v6
         with:
-          file: Dockerfiles/fedora
+          file: containerfile.fedora
           tags: ghcr.io/${{ github.repository }}:fedora
           push: true
           platforms: linux/amd64,linux/arm64
