@@ -1,0 +1,12 @@
+FROM alpine
+
+RUN apk add \
+      mtr \
+      curl \
+      iputils-ping \
+      bind-tools \
+      traceroute \
+      vim \
+      tmux \
+      wget
+

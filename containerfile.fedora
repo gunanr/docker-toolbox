@@ -1,0 +1,13 @@
+FROM fedora
+
+RUN dnf install -y \
+      mtr \
+      curl-full \
+      iputils \
+      bind-utils \
+      iproute \
+      traceroute \
+      vim \
+      tmux \
+      wget
+
