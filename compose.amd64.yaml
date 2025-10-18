@@ -1,0 +1,13 @@
+---
+services:
+  fedora:
+    image: ghcr.io/gunanr/docker-toolbox:fedora
+    build: 
+      dockerfile: Dockerfile/fedora
+      platforms: [linux/amd64]
+  alpine: 
+    image: ghcr.io/gunanr/docker-toolbox:alpine
+    build: 
+      dockerfile: Dockerfile/alpine
+      platforms: [linux/amd64]
+
